@@ -1,3 +1,1 @@
-const { rspack } = require("@rspack/browser");
-
-console.log(rspack);
+const worker = new Worker(new URL("./worker.js", import.meta.url));

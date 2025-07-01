@@ -17,6 +17,9 @@ importers:
       react-dom:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
+      scheduler:
+        specifier: ^0.26.0
+        version: 0.26.0
     devDependencies:
       '@rsbuild/core':
         specifier: ^1.3.15
