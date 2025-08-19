@@ -7,7 +7,7 @@ builtinMemFs.volume.fromJSON({
   // ...BasicReact,
   // "/index.js": "1",
   "/index.js": `
-  import a from "./aa.js"
+  import a from "./a.js"
   import b from "./b.js"
   console.log(a)
   console.log(b)`,
@@ -31,10 +31,10 @@ function run() {
             test: /a\.js$/,
             loader: "./loader.js",
           },
-          // {
-          //   test: /b\.js$/,
-          //   loader: "./loader2.js",
-          // },
+          {
+            test: /b\.js$/,
+            loader: "./loader.js",
+          },
         ],
       },
       // plugins: [new rspack.HtmlRspackPlugin({ template: "./template.js" })],

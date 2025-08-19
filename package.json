@@ -9,7 +9,7 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@rspack/browser": "link:/Users/bytedance/Projects/rspack/packages/rspack-browser",
+    "@rspack/browser": "npm:@rspack-canary/browser@1.4.12-canary-1a94ade3-20250814141828",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "scheduler": "^0.26.0"

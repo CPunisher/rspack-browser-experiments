@@ -13,7 +13,11 @@ export default defineConfig({
   source: {
     define: {
       NODE_MODULES: JSON.stringify(NODE_MODULES),
+      "process.env.NODE_DEBUG_NATIVE": undefined,
     },
+  },
+  output: {
+    minify: false,
   },
   server: {
     headers: {
