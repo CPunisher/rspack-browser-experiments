@@ -9,7 +9,7 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@rspack/browser": "link:../rspack/packages/rspack-browser",
+    "@rspack/browser": "link:/Users/bytedance/Projects/rspack/packages/rspack-browser",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "scheduler": "^0.26.0"

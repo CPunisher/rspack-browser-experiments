@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@rspack/browser':
-        specifier: link:../rspack/packages/rspack-browser
+        specifier: link:/Users/bytedance/Projects/rspack/packages/rspack-browser
         version: link:../rspack/packages/rspack-browser
       react:
         specifier: ^19.1.0
