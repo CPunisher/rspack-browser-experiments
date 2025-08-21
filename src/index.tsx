@@ -16,7 +16,8 @@ function run() {
 
     const json = builtinMemFs.volume.toJSON();
     console.log(json);
-    console.log(json["/dist/main.js"] as any);
+    console.log(json["/dist/main.js"] as string);
+    // eval(json["/dist/main.js"] as string);
   });
 }
 
