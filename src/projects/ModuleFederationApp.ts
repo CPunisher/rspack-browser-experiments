@@ -79,10 +79,7 @@ export const config: RspackOptions = {
   plugins: [
     new BrowserHttpImportEsmPlugin({
       domain: "https://esm.sh",
-      dependencyUrl: {
-        "@module-federation/webpack-bundler-runtime":
-          "https://esm.sh/@module-federation/webpack-bundler-runtime?dev",
-      },
+      dev: ["@module-federation/webpack-bundler-runtime", "react-dom"],
       externals: ["react"],
     }),
     new HtmlRspackPlugin(),
