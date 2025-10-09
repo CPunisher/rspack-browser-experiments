@@ -1,3 +1,3 @@
-// import "./worker";
+import "./worker";
 
-new Worker(new URL("./worker.js", import.meta.url));
+// new Worker(new URL("./worker.js", import.meta.url));

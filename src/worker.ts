@@ -1,5 +1,5 @@
 import { rspack, builtinMemFs, Stats } from "@rspack/browser";
-import { files, config } from "./projects/ModuleFederationApp";
+import { files, config } from "./projects/BasicReact";
 
 builtinMemFs.volume.fromJSON({
   ...files,
@@ -11,7 +11,7 @@ const callback = (err: Error | null, stats: Stats | undefined) => {
   }
   console.log("Stats err: ", !!stats?.hasErrors());
   console.log("Stats warn: ", !!stats?.hasWarnings());
-  console.log(stats?.toJson({ all: false, errors: true, warnings: true }));
+  // console.log(stats?.toJson());
 
   const json = builtinMemFs.volume.toJSON();
   console.log(json);
