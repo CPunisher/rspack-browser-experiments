@@ -1,9 +1,9 @@
 import { rspack, builtinMemFs, Stats } from "@rspack/browser";
-import { files, config, projectFs } from "./projects/InputFileSystem";
+import { files, config } from "./projects/BasicReact";
 
-// builtinMemFs.volume.fromJSON({
-//   ...files,
-// });
+builtinMemFs.volume.fromJSON({
+  ...files,
+});
 
 const callback = (err: Error | null, stats: Stats | undefined) => {
   if (err) {
@@ -13,11 +13,9 @@ const callback = (err: Error | null, stats: Stats | undefined) => {
   console.log("Stats warn: ", !!stats?.hasWarnings());
   console.log(stats?.toJson({ all: false, errors: true }));
 
-  // const json = builtinMemFs.volume.toJSON();
-  const json = projectFs.vol.toJSON();
+  const json = builtinMemFs.volume.toJSON();
   console.log(json);
   console.log(json["/dist/main.js"] as string);
-  // eval(json["/dist/main.js"] as string);
 };
 
 function run() {
