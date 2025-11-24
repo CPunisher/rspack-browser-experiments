@@ -1,5 +1,5 @@
 import { rspack, builtinMemFs, Stats } from "@rspack/browser";
-import { files, config } from "./projects/BasicReact";
+import { files, config } from "./projects/ReactRefresh";
 
 builtinMemFs.volume.fromJSON({
   ...files,
